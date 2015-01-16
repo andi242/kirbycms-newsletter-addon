@@ -32,8 +32,5 @@ in kirbys ./site/config/config.php
 - called if 'send emails' is started
 - grabs latest 'newsletter' category entry and loops through all email recipents and to send a mail via PHPMailer
 - customizable html email content
-- 
-
-## customize
 
 ## requirements
