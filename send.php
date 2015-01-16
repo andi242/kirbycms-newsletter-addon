@@ -8,6 +8,7 @@ if(empty(site()->user())){
     echo "please log in!";
     } else {
     	// change <local path> to your settings
+    	// check path to php binary as well!
 	shell_exec('/usr/bin/php55 <local path>/background.php >> <local path>/background.log &');
 	echo site()->user()->username();
 ?>
