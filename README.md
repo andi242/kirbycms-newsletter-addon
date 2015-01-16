@@ -15,23 +15,7 @@ Perhaps you can grab the code and develop it to a decent newsletter addon for ki
 # documentation
 ## config
 set Newsletter configuration vars
-/*
----------------------------------------
-Kirby Newsletter settings
----------------------------------------
- set Newsletter configuration vars
- 		phpmailer_path,  
-		phpmailer_host, 
-		phpmailer_user, 
-		phpmailer_passwd, 
-		phpmailer_log
-		phpmailer_page
-		phpmailer_blog
-		phpmailer_from
-		phpmailer_fromName
-		phpmailer_ReplyTo
-		phpmailer_ReplyToName
-*/
+
 ``
 c::set('phpmailer_path', '');
 c::set('phpmailer_host', 'smtp.mail.com');
