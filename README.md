@@ -1,5 +1,8 @@
-# kirby-newsletter-addon
-this will add a newsletter functionality to kirby
+# kirby newsletter-addon
+this will add a newsletter functionality to kirby.
+
+>I developed this because I did not want to rely on MailChimp and others. 
+>Basically due to privacy reasons and protecting customers email adresses from being 'sold'.
 
 ## note
 I am by no means a developer in PHP or web stuff.
