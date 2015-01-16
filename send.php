@@ -7,7 +7,8 @@ include(__DIR__ . DS . 'kirby' . DS . 'bootstrap.php');
 if(empty(site()->user())){
     echo "please log in!";
     } else {
-	shell_exec('/usr/bin/php55 /usr/www/users/ddmmad/hairgang/background.php >> /usr/www/users/ddmmad/hairgang/background.log &');
+    	// change <local path> to your settings
+	shell_exec('/usr/bin/php55 <local path>/background.php >> <local path>/background.log &');
 	echo site()->user()->username();
 ?>
 	<html>
