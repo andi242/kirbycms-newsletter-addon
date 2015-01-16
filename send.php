@@ -3,10 +3,9 @@ define('DS', DIRECTORY_SEPARATOR);
 
 // load the cms bootstrapper
 include(__DIR__ . DS . 'kirby' . DS . 'bootstrap.php');
-// include('./kirby/bootstrap.php');
 
 if(empty(site()->user())){
-    echo "Bitte einloggen!";
+    echo "please log in!";
     } else {
 	shell_exec('/usr/bin/php55 /usr/www/users/ddmmad/hairgang/background.php >> /usr/www/users/ddmmad/hairgang/background.log &');
 	echo site()->user()->username();
@@ -14,7 +13,7 @@ if(empty(site()->user())){
 	<html>
 	<head>
 		<body>
-			<center><h1>Versand gestartet!</h1></center>
+			<center><h1>batch started!</h1></center>
 		</body>
 	</head>
 	</html>
