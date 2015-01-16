@@ -20,6 +20,7 @@ set Newsletter configuration vars
 - phpmailer_fromName
 - phpmailer_ReplyTo
 - phpmailer_ReplyToName
+
 in kirbys ./site/config/config.php
 
 ## files
