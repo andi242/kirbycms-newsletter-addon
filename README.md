@@ -8,20 +8,19 @@ I post the code and files I created since I have no idea on how to move on with 
 Perhaps you can grab the code and develop it to a decent newsletter addon for kirby :)
 
 ## config
-
- set Newsletter configuration vars
- 		phpmailer_path,  
-		phpmailer_host, 
-		phpmailer_user, 
-		phpmailer_passwd, 
-		phpmailer_log
-		phpmailer_page
-		phpmailer_blog
-		phpmailer_from
-		phpmailer_fromName
-		phpmailer_ReplyTo
-		phpmailer_ReplyToName
- in kirbys ./site/config/config.php
+set Newsletter configuration vars
+- phpmailer_path,  
+- phpmailer_host, 
+- phpmailer_user,
+- phpmailer_passwd,
+- phpmailer_log
+- phpmailer_page
+- phpmailer_blog
+- phpmailer_from
+- phpmailer_fromName
+- phpmailer_ReplyTo
+- phpmailer_ReplyToName
+in kirbys ./site/config/config.php
 
 ## files
 ### background.log
