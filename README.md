@@ -33,4 +33,8 @@ in kirbys ./site/config/config.php
 - grabs latest 'newsletter' category entry and loops through all email recipents and to send a mail via PHPMailer
 - customizable html email content
 
+### send.php
+used to trigger the shell_exec for sending the php process to the operating system
+logged in user is required
+
 ## requirements
