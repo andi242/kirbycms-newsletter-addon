@@ -22,7 +22,8 @@ Kirby Newsletter settings
 */
 
 /*
-
+// this is to set the path to PHPMailer files
+// not used at this time
 $phpmailerpath = c::get('phpmailer_path');
 
 */
@@ -52,6 +53,7 @@ endforeach;
 // build the content!
 
 // the header
+// customize the styles, please!
 $header = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="de">
@@ -111,6 +113,7 @@ $footer = '
 </body>
 </html>
 ';
+// append all vars
 $content = $header;
 $content .= $mailcontent;
 $content .= $footer;
@@ -120,9 +123,9 @@ $content .= $footer;
 // grabbing config.php defined variables
 $mail = new PHPMailer;
 // uncomment if debugging is necessary
-
 // $mail->SMTPDebug = 3; // Enable verbose debug output (loglevel 0-3 possible)
 
+// SMTP mailing is used, because php mailing might be marked as spam.
 $mail->isSMTP();
 $mail->Host = c::get('phpmailer_host');
 $mail->Username = c::get('phpmailer_user');
