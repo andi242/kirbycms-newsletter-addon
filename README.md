@@ -7,6 +7,12 @@ I post the code and files I created since I have no idea on how to move on with 
 
 Perhaps you can grab the code and develop it to a decent newsletter addon for kirby :)
 
+# stuff to be done (which I cant personally ;))
+- make a better monitoring of sending emails
+- add some kind of 'abort' funcitonality to the system process (shell_exec) 
+- make a better kirby app and use kirbys full potential with plugin/controllers, etc.
+
+# documentation
 ## config
 set Newsletter configuration vars
 - phpmailer_path,  
@@ -38,3 +44,4 @@ used to trigger the shell_exec for sending the php process to the operating syst
 logged in user is required
 
 ## requirements
+PHPMailer Plugin: https://github.com/PHPMailer/PHPMailer
