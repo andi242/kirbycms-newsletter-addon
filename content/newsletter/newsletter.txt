@@ -1,0 +1,7 @@
+Title: Newsletter
+
+----
+
+Text: example1@email.com,
+example2@email.com,
+example3@email.com
