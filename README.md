@@ -16,7 +16,7 @@ Perhaps you can grab the code and develop it to a decent newsletter addon for ki
 ## config
 set Newsletter configuration vars
 
-``
+<pre><code>
 c::set('phpmailer_path', '');
 c::set('phpmailer_host', 'smtp.mail.com');
 c::set('phpmailer_user', 'mailstuff@mail.com');
@@ -32,7 +32,7 @@ c::set('phpmailer_ReplyTo', 'mailstuff@mail.com');
 c::set('phpmailer_ReplyToName', 'Your Name');
 c::set('phpmailer_', '');
 c::set('phpmailer_', '');
-``
+</pre></code>
 
 - phpmailer_path,  
 - phpmailer_host, 
