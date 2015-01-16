@@ -5,6 +5,7 @@ define('DS', DIRECTORY_SEPARATOR);
 include(__DIR__ . DS . 'kirby' . DS . 'bootstrap.php');
 
 if(empty(site()->user())){
+    // active user session is reqired
     echo "please log in!";
     } else {
     	// change <local path> to your settings
