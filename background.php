@@ -41,8 +41,8 @@ $recip = explode(',',$body_eml);
 $content = "null";
 
 // filter all news and grab the latest child-entry
-
-foreach(page('neuigkeiten')->children()->visible()->sortBy('date', 'desc')->filterBy('newsletter', '==', '1')->limit(1) as $subpage):
+// please change 'news' to your kirby page where your blog posts reside
+foreach(page('news')->children()->visible()->sortBy('date', 'desc')->filterBy('newsletter', '==', '1')->limit(1) as $subpage):
 	// this is the child-entry content
 	$mailcontent = kirbytext($subpage->text());
 	$online_link = $subpage->uri();
