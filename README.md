@@ -34,20 +34,20 @@ c::set('phpmailer_', '');</pre></code>
 in kirbys ./site/config/config.php
 
 ## files
-### background.log
+#### background.log
 - resides in server/kirby root and holds log messages of every email sent
 
-### background.php
+#### background.php
 - resides in server/kirby root
 - called if 'send emails' is started
 - grabs latest 'newsletter' category entry and loops through all email recipents and to send a mail via PHPMailer
 - customizable html email content
 
-### send.php
+#### send.php
 used to trigger the shell_exec for sending the php process to the operating system
 logged in user is required
 
-### Kirby blueprints
+#### Kirby blueprints
 - blogarticle.php, needs to be updated for adding a "newsletter" type which will be grabbed for emailing
 - newsletter.php, blueprint for maintaining recipients and start sending emails
 
