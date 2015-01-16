@@ -37,7 +37,8 @@ include('./kirby/bootstrap.php');
 echo "---------------" . date('Y-m-d H:i:s') . " new email-batch ---------------".PHP_EOL;
 
 // grab mail adresses from newsletter page
-$body_eml = page('newsletter')->text();
+// please change 'news' to your kirby page where your blog posts reside
+$body_eml = page('news')->text();
 $recip = explode(',',$body_eml);
 $content = "null";
 
