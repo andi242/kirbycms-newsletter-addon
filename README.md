@@ -10,6 +10,8 @@ Perhaps you can grab the code and develop it to a decent newsletter addon for ki
 ## config
 
 ## files
+* background.log
+** resides in server/kirby root and holds log messages of every email sent
 
 ## customize
 
