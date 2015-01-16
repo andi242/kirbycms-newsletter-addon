@@ -1,7 +1,7 @@
 # kirby newsletter-addon
 this will add a newsletter functionality to kirby.
 
->I developed this because I did not want to rely on MailChimp and others. 
+>I developed this because I did not want to rely on 'professional newsletter providers'. 
 >Basically due to privacy reasons and protecting customers email adresses from being 'sold'.
 
 ## note
