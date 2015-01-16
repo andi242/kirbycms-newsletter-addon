@@ -15,6 +15,41 @@ Perhaps you can grab the code and develop it to a decent newsletter addon for ki
 # documentation
 ## config
 set Newsletter configuration vars
+/*
+---------------------------------------
+Kirby Newsletter settings
+---------------------------------------
+ set Newsletter configuration vars
+ 		phpmailer_path,  
+		phpmailer_host, 
+		phpmailer_user, 
+		phpmailer_passwd, 
+		phpmailer_log
+		phpmailer_page
+		phpmailer_blog
+		phpmailer_from
+		phpmailer_fromName
+		phpmailer_ReplyTo
+		phpmailer_ReplyToName
+*/
+``
+c::set('phpmailer_path', '');
+c::set('phpmailer_host', 'smtp.mail.com');
+c::set('phpmailer_user', 'mailstuff@mail.com');
+c::set('phpmailer_passwd', 'SECRET!');
+c::set('phpmailer_phpbin', '');
+c::set('phpmailer_localpath', '');
+c::set('phpmailer_logfile', '');
+c::set('phpmailer_page', '');
+c::set('phpmailer_blog', '');
+c::set('phpmailer_from', 'mailstuff@mail.com');
+c::set('phpmailer_fromName', 'Your Name');
+c::set('phpmailer_ReplyTo', 'mailstuff@mail.com');
+c::set('phpmailer_ReplyToName', 'Your Name');
+c::set('phpmailer_', '');
+c::set('phpmailer_', '');
+``
+
 - phpmailer_path,  
 - phpmailer_host, 
 - phpmailer_user,
