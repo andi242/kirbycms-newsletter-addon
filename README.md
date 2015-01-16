@@ -48,7 +48,7 @@ used to trigger the shell_exec for sending the php process to the operating syst
 logged in user is required
 
 #### Kirby blueprints
-- blogarticle.php, needs to be updated for adding a "newsletter" type which will be grabbed for emailing
+- blogarticle.php, needs to be updated for adding a "newsletter" blogpost type which will be grabbed for emailing
 - newsletter.php, blueprint for maintaining recipients and start sending emails
 
 ## requirements
