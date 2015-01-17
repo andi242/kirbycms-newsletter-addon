@@ -12,13 +12,13 @@ fields:
     type: info
     icon: exclamation-triangle
     text: >
-      Hier werden die Einstellungen für den Newsletter festgelegt und die Emailadressen der Empfänger gepflegt.
+      This is where the settings and email recipients for the newsletter will be set.
   title:
-    label: Konfiguration
+    label: Configuration
     type:  info
     required: false
     text: Newsletter
-    help: Nicht verändern!
+    help: do not change this.
   mailsect:
   	label: Emails
   	type: headline
