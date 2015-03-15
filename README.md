@@ -4,6 +4,8 @@ this will add a newsletter functionality to kirby.
 >I developed this because I did not want to rely on 'professional newsletter providers'. 
 >Basically due to privacy reasons and protecting customers email adresses from being 'sold'.
 
+(Warning: added a widget recently, which is Kirby 2.0.7-nightly build only)
+
 ## note
 I am by no means a developer in PHP or web stuff.
 I post the code and files I created since I have no idea on how to move on with this. I believe I won't even get along with bugs, and issue fixing. Count this as an initial online store for further development.
