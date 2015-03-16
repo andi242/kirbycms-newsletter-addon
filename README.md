@@ -13,10 +13,10 @@ What's new:
 - no more background processing with shell_exec()
 - all recipients are native Kirby users now
 - subscribe and unsubscribe form added
-- all recipients will be added to bcc: in the email
-- this should be ok for smaller recipients-lists
+- all recipients will be added to bcc: in the email (this should be ok for smaller recipients-lists)
+- added a widget (min. req. Kirby 2.0.7) to list the latest 5 `children` of page `blog` (please adapt if necessary)
  
-if you need to rely on professional providers, better use Kirbys built-in Amazon SES, Mailgun, etc.
+If you need to rely on professional providers, better use Kirbys built-in Amazon SES, Mailgun, etc.
 
 # documentation
 ## installation
@@ -29,4 +29,6 @@ set Newsletter configuration vars in Kirbys ./site/config/config.php
 ## requirements/credits
 
 PHPMailer Plugin: https://github.com/PHPMailer/PHPMailer is already built in.
+
+Thanks for all the help in the [Kirby forum](http://forum.getkirby.com)! :)
 
