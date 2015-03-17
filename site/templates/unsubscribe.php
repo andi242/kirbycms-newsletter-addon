@@ -25,9 +25,9 @@
 if (!empty($email)) {
 	try {
 		// not working at this time, issue here with selecting user by email
-		// $username = explode('@', $email);
-		// site()->user($username)->delete();
-		echo 'The user has been deleted';
+		$username = explode('@', $email);
+		$site->user($username[0])->delete();
+		echo 'The email address has been deleted<br>';
 		
 		} catch(Exception $e) {
 		echo 'The user could not be deleted<br>';
