@@ -28,18 +28,16 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 
-/* -----------------  newsletter  ---------------------- */
-
+/* -----------------  newsletter  config ---------------------- */
 //c::set('phpmailer_path', '');
 c::set('phpmailer_host', '');
 c::set('phpmailer_user', '');
 c::set('phpmailer_passwd', '');
-
 //c::set('phpmailer_phpbin', '');
 //c::set('phpmailer_localpath', '');
 //c::set('phpmailer_logfile', '');
 //c::set('phpmailer_page', '');
-//c::set('phpmailer_blog', '');
+c::set('phpmailer_blog', ''); // set your blog root here for post selection
 c::set('phpmailer_from', '');
 c::set('phpmailer_fromName', '');
 c::set('phpmailer_ReplyTo', '');
@@ -47,6 +45,8 @@ c::set('phpmailer_ReplyToName', '');
 //c::set('phpmailer_', '');
 //c::set('phpmailer_', '');
 
+
+// important for user (a.k.a. recipient) creation!
 c::set('roles', array(
   array(
     'id'      => 'admin',
@@ -65,3 +65,4 @@ c::set('roles', array(
     'panel'   => false
   )
 ));
+/* -----------------  end newsletter config  ---------------------- */
