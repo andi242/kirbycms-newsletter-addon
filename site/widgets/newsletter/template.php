@@ -7,7 +7,7 @@ Choose your post to be sent as newsletter.
 		<div class="input input-with-selectbox" data-focus="true">
 			<div class="selectbox-wrapper">
 				<select class="selectbox" name="selectpost">
-					<? foreach(page('blog')->children()->visible()->sortBy('date', 'desc')->limit(5) as $entry): ?>
+					<? foreach(page(c::get('phpmailer_blog'))->children()->visible()->sortBy('date', 'desc')->limit(5) as $entry): ?>
 						<option value="<?echo $entry->uri(); ?>"><?echo $entry->title(); ?></option>
 					<? endforeach; ?>
 				</select>
