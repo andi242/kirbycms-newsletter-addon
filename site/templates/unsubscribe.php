@@ -3,9 +3,9 @@
 <article>
  <section>
 
-<h2>Please enter your Email address to unsubscribe from our newsletter.</h2>
+<h2><? echo l::get('headerunsubscr') ?></h2>
 <? if(!v::email($email)) {
-  echo 'Please enter a valid email.';
+  echo l::get('validemail');
   $email ="";
 } ?>
 
@@ -16,7 +16,7 @@
 		<center>
 		<form action="<?php echo $PHP_SELF ?>" method="post">
 			<input type="text" name="email" value="" />
-			<input class="btn btn-rounded btn-submit" type="submit" value="enter">
+			<input class="btn btn-rounded btn-submit" type="submit" value="<? echo l::get('submit') ?>">
 		</form>
 		</center>
 <!-- end email form -->
@@ -27,10 +27,10 @@ if (!empty($email)) {
 		// not working at this time, issue here with selecting user by email
 		$username = explode('@', $email);
 		$site->user($username[0])->delete();
-		echo 'The email address has been deleted<br>';
+		echo l::get('deleteunsubscr');
 		
 		} catch(Exception $e) {
-		echo 'The user could not be deleted<br>';
+		echo l::get('error');
 		// optional reason: 
 		echo $e->getMessage();
 		}	

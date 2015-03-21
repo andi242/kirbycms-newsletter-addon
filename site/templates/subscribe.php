@@ -3,9 +3,9 @@
 <article>
  <section>
 
-<h2>Please enter your Email address to receive our Newsletter.</h2>
+<h2><? echo l::get('headersubscr') ?></h2>
 <? if(!v::email($email)) {
-  echo 'Please enter a valid email.';
+  echo l::get('validemail');
   $email ="";
 } ?>
 
@@ -16,7 +16,7 @@
 		<center>
 		<form action="<?php echo $PHP_SELF ?>" method="post">
 			<input type="text" name="email" value="" />
-			<input class="btn btn-rounded btn-submit" type="submit" value="enter">
+			<input class="btn btn-rounded btn-submit" type="submit" value="<? echo l::get('submit') ?>">
 		</form>
 		</center>
 <!-- end email form -->
@@ -32,12 +32,12 @@ if (!empty($email)) {
 	    'role' => 'newsletter',
 	    'password' => 'noneadfadsfadsfdasfwegtjzivvaasd',
 	    ));
-	  echo "Thank you for subscribing to our newsletter!";
+	  echo l::get('thanks');
 	  
 	
 	} catch(Exception $e) {
 	
-	  echo 'The user could not be created';
+	  echo l::get('error');
 	  // optional error message: 
 	  echo $e->getMessage();
 	}
