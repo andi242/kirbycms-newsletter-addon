@@ -1,8 +1,8 @@
-<? require './assets/phpinc/PHPMailerAutoload.php'; ?>
+<?PHP require './assets/phpinc/PHPMailerAutoload.php'; ?>
 
 <?php snippet('header') ?>
 
-<? $user = site()->user() ?>
+<?PHP$user = site()->user() ?>
 
 <article>
  <section>
@@ -14,13 +14,13 @@ if(empty($user)) {
 		go('home');
 } ?>
 <small>
-<? $page = $_POST['selectpost']; ?>
+<?PHP $page = $_POST['selectpost']; ?>
 
-<? $subj = strip_tags(page($page)->title()); ?>
-<? $body = strip_tags(page($page)->text()->kirbytext()); ?>
+<?PHP $subj = strip_tags(page($page)->title()); ?>
+<?PHP $body = strip_tags(page($page)->text()->kirbytext()); ?>
 
-<? echo "<p>".$subj."</p>"; ?>
-<? echo "<p>".$body."</p>"; ?>
+<?PHP echo "<p>".$subj."</p>"; ?>
+<?PHP echo "<p>".$body."</p>"; ?>
 </small>
 
 

@@ -1,27 +1,27 @@
 <?php snippet('header') ?>
-<? $email = $_POST['email']; ?>
+<?PHP $email = $_POST['email']; ?>
 <article>
  <section>
 
-<h2><? echo l::get('headersubscr') ?></h2>
-<? if(!v::email($email)) {
+<h2><?PHP echo l::get('headersubscr') ?></h2>
+<?PHP if(!v::email($email)) {
   echo l::get('validemail');
   $email ="";
 } ?>
 
-<? if (empty($email)) { ?>
+<?PHP if (empty($email)) { ?>
 
 <!-- email form -->
 		
 		<center>
 		<form action="<?php echo $PHP_SELF ?>" method="post">
 			<input type="text" name="email" value="" />
-			<input class="btn btn-rounded btn-submit" type="submit" value="<? echo l::get('submit') ?>">
+			<input class="btn btn-rounded btn-submit" type="submit" value="<?PHP echo l::get('submit') ?>">
 		</form>
 		</center>
 <!-- end email form -->
-<? } ?>
-<? 
+<?PHP } ?>
+<?PHP 
 if (!empty($email)) {
 	try {
 		$username = explode('@', $email);
