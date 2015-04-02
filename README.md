@@ -10,7 +10,7 @@ this will add a newsletter functionality to kirby.
 - send posts content as email to Kirby users
 - choose posts to be send widget in panel 
 - create users form (a.k.a subscribe)
-- delete users form (a.k.a unsubscribe) // bugged at the moment!
+- delete users form (a.k.a unsubscribe)
 - includes PHPMailer to make use of SMTP connectivity
 
 #changelog
