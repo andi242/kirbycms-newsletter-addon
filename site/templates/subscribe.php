@@ -20,8 +20,9 @@
 		</form>
 		</center>
 <!-- end email form -->
-<?PHP } ?>
-<?PHP 
+<?PHP
+} 
+
 if (!empty($email)) {
 	try {
 		$username = explode('@', $email);
