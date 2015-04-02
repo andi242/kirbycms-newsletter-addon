@@ -2,7 +2,7 @@
 
 <?php snippet('header') ?>
 
-<?PHP$user = site()->user() ?>
+<?PHP $user = site()->user() ?>
 
 <article>
  <section>
